@@ -1,0 +1,43 @@
+header {background-color:#1ab188; padding:14px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)}
+h1 {font-weight:300}
+header > h1 {font-weight:300; font-size:24px; margin:0; color: #FFFFFF}
+.content {display:flex}
+.contacts {list-style-type: none; width: 220px; margin: 0 24px 0 -24px}
+.contacts li {padding:4px 8px; cursor:pointer}
+.contacts li:hover {color:#369; background-color:#EEE}
+.selected { background-color:#EEE; color:#369}
+.login-btn {background-color: #1ab188; color: #ffffff; padding: 14px 20px; margin: 8px auto; border: 0; cursor: pointer; width: 500px; font-size: 2rem; text-transform:uppercase; letter-spacing:.1em; font-weight:600; transition:all.5s ease; -webkit-appearance: none; box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.login-btn:hover {opacity: 0.8;}
+.container {padding: 16px; text-align: center;}
+.display {display:inline;}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #1ab188;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+.center{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

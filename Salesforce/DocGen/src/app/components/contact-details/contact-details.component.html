@@ -1,0 +1,18 @@
+<div *ngIf="contact">
+  <h2>{{contact.FirstName}} {{contact.LastName}} Details</h2>
+  <div>
+      <div><label>id: </label>{{contact.Id}}</div>
+      <div>
+          <label>First Name:</label>
+          <input type="text" [(ngModel)]="contact.FirstName"/>
+      </div>
+      <div>
+          <label>Last Name:</label>
+          <input type="text" [(ngModel)]="contact.LastName"/>
+      </div>
+      <div>
+          <label>Phone:</label>
+          <input type="text" [(ngModel)]="contact.Phone"/>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<header>
+<div class="display"><h1>Salesforce Contacts</h1></div>
+<div class="display"><h3 *ngIf='loggedUser' >Login User: {{loggedUser}}</h3></div>
+</header>
+<div class="container" *ngIf='!contacts && !loading'>
+    <button type="button" (click)='onLogin();' class='login-btn'>Log In!</button>
+</div>
+<div class="container center" *ngIf='loading'>
+    <div class="loader"></div>
+</div>
+<div class="content">
+    <ul class="contacts">
+        <li *ngFor="let val of contacts" (click)="onSelect(val)" [class.selected]="val === selectedContact">
+            {{val.FirstName}} {{val.LastName}}
+        </li>
+    </ul>
+    <app-contact-details [contact]="selectedContact"></app-contact-details>
+</div>
