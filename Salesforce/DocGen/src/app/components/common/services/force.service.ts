@@ -7,12 +7,12 @@ export class ForceService {
 
   // The login URL for the OAuth process
   // To override default, pass loginURL in init(props)
-  loginURL = 'https://login.salesforce.com';
+  loginURL = 'https://baptiste-test-dev-ed.my.salesforce.com/services/oauth2/token';
 
   // The Connected App client Id. Default app id provided - Not for production use.
   // This application supports http://localhost:8200/oauthcallback.html as a valid callback URL
   // To override default, pass appId in init(props)
-  appId = '3MVG9fMtCkV6eLheIEZplMqWfnGlf3Y.BcWdOf1qytXo9zxgbsrUbS.ExHTgUPJeb3jZeT8NYhc.hMyznKU92';
+  appId = '';
 
   // The force.com API version to use.
   // To override default, pass apiVersion in init(props)
