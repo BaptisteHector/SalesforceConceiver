@@ -1,0 +1,18 @@
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row >
+
+      <h1>ImmaSayYes</h1>
+      <span class="menu-spacer"></span>
+        <button mat-button (click)='display();' [routerLink]="'/home'"> Home </button>
+        <div *ngIf='loggedUser'>
+            <button mat-button [routerLink]="'/datamodel'"> DataModel </button>
+        </div>
+      <span class="example-spacer"></span>
+      <div class="container" *ngIf='!loggedUser'>
+        <button mat-button type="button" (click)='onLogin();' class='login-btn'>Log In!</button>
+      </div>
+      <div class="container" *ngIf='loggedUser'>
+        <button mat-button type="button" (click)='onLogout();' class='logout-btn'>Log Out!</button>
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>

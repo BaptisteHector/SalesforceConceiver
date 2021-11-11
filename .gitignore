@@ -9,12 +9,14 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.env
+
 
 # Sample for VF Project
-
 Sample/
 DeployTest/
 VFApps/
+AngularSample/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
